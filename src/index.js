@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './assets/styles/spectre-exp.min.css';
+import './assets/styles/spectre.min.css';
+import './assets/styles/spectre-icons.min.css';
+import './assets/styles/main.css'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
