@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import styled from 'styled-components';
+import login from './api';
+
 
 const NavContainer = styled.div`
   height: 70px;
@@ -19,9 +21,10 @@ const NavContainer = styled.div`
 `
 
 export default class Nav extends Component {
+
   render() {
     return (
-      <NavContainer>
+      <NavContainer onClick={(e) => login('test', 'milanshah')}>
         <header class="navbar">
           <section class="navbar-section">
             <button class="btn btn-link">Docs</button>
